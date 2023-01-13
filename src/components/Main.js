@@ -3,8 +3,13 @@ import { Routes, Route } from 'react-router-dom';
 import Index from '../pages/Index';
 import Show from '../pages/Show';
 
+
+
 function Main(props) {
+    
     const [ people, setPeople ] = useState(null);
+
+
     const URL = 'http://localhost:4000/people/';
 
     const getPeople = async () => {

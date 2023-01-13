@@ -25,7 +25,7 @@ $contrastcolor: white;
 .nav {
   @include white-text-black-bg;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   a {
     @include white-text-black-bg;
@@ -33,6 +33,19 @@ $contrastcolor: white;
     div {
       margin: 10px;
       font-size: large;
+    }
+  }
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  li {
+    margin-right: 16px;
+    button {
+      cursor: pointer;
+      border: none;
+      @include white-text-black-bg()
     }
   }
 }
